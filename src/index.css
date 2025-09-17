@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Кастомные анимации как в твоём коде */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeInUp { animation: fadeInUp 1s ease-out forwards; }
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.animate-fadeIn { animation: fadeIn 0.5s ease-out forwards; }
+
+/* При желании добавь свои слои компонентов:
+@layer components {
+  .btn-primary { @apply px-8 py-4 rounded-full font-bold text-lg transition-all duration-300; }
+}
+*/
